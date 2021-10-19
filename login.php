@@ -4,7 +4,7 @@
   if(isset($_SESSION['username'])){
     header('location:index.php');
   }
-  if(isset($_POST['submit'])){
+  if(isset($_POST['login'])){
       $name = $_POST['username'];
       $password = $_POST['password'];
       $sql =  "select * from subscriber where username='$name' and password='$password'";
@@ -37,7 +37,7 @@
                             <label>password</label>
                             <input class="form-control" name="password" type="password" placeholder="password" />
                         </div>
-                        <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" name="login" class="btn btn-primary">Submit</button>
                         <p class="text-center mt-4"><strong><?php echo $msg ?></strong></p>
                         <div class="form-group border"> 
                           <a href="register.php"  class="btn btn-primary w-100">Sign Up</a>
