@@ -6,7 +6,7 @@ if(isset($_SESSION['username'])){
   $name = $_SESSION['username'];
 }
 $search = '';
-if(isset($_POST['login'])){
+if(isset($_POST['submit'])){
    $search = $_POST['search'];
 }
 
@@ -48,7 +48,7 @@ if(isset($_POST['login'])){
       <div class="login">
         <form class="search" action="index.php" method="post">
           <input type="text" placeholder="search" name="search">
-          <button type="submit" name="login"><i class="bi bi-search"></i></button>
+          <button type="submit" name="submit"><i class="bi bi-search"></i></button>
         </form>
         <?php 
          if($name){
