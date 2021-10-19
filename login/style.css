@@ -1,0 +1,55 @@
+.sign {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.sign .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  background: #a9f3e4;
+}
+
+.sign .grid .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sign .grid .item img {
+  width: 100%;
+  height: auto;
+}
+
+.sign .grid .item form {
+  border: 1px solid #000;
+  border-radius: 10px;
+  min-width: 350px;
+  padding: 1rem;
+  min-height: 380px;
+  margin: 1rem 0;
+  background: #fff;
+}
+
+.sign .grid .item form .form-group {
+  margin: 1rem 0;
+}
+
+.sign .grid .item form .form-group label {
+  margin-bottom: .4rem;
+}
+
+@media screen and (max-width: 900px) {
+  .sign .grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .sign .grid .item:first-child {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */

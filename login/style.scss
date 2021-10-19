@@ -1,0 +1,40 @@
+.sign{
+    max-width: 1100px;
+    margin: auto;
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background: #a9f3e4;
+        .item{
+            display: flex;
+            justify-content: center;
+            
+            img{
+             width: 100%;
+             height: auto;
+            }
+            form{
+                border:1px solid #000;
+                border-radius: 10px;
+                min-width: 350px;
+                padding: 1rem;
+                min-height: 380px;
+                margin: 1rem 0;
+                background: #fff;
+                .form-group{
+                    margin:1rem 0;
+                    label{
+                        margin-bottom: .4rem;
+                    }
+                }
+            }
+        }
+
+        @media screen and(max-width:900px){
+            grid-template-columns: 1fr;
+            .item:first-child{
+                display: none;
+            }
+        }
+    }
+}
