@@ -24,7 +24,7 @@
                     <img src="./images/login/travel.jpg" />
                 </div>
                 <div class="item">
-                    <form method="post" action="register.php">
+                    <form method="post" action="register.php" >
                         <div class="form-group">
                             <label>username</label>
                             <input class="form-control" name="username" type="text" placeholder="username" />
